@@ -1,0 +1,194 @@
+:root {
+    /* low contrast colors */
+    --blue0: #1e90ff;
+    --blue1: #2E4F95;
+    --purple-dark: #2C3342;
+    --orange-dark: #A97611;
+    --reed-dark: #A7440C;
+    --dark-green:#667A5B;
+    --red-mellow: #a11616;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+/* START Welcome-Title*/
+.header {
+    font-family: 'Brush Script MT', cursive;
+    padding: 5px;
+    text-align: center;
+    background: var(--purple-dark);
+    color:azure;
+}
+
+div.side {
+    margin: 5px 5px;
+    width: 100%;
+}
+/* END - Title */
+
+/* START - Columns */
+
+div.fill-bar {
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+.fill-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.fill-bar li {
+    width: 0;
+    background-color: #aaa;
+    border-bottom: 2px solid white;
+    transition: 0.7s;
+}
+
+.fill-bar li a {
+    white-space: normal;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.fill-bar li:hover{
+    width: 100%;
+}
+
+/* END - Columns */
+
+/* START - Navigarion bar */
+
+div.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+div.navigation-bar li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+div.navigation-bar li:last-child {
+    border-right: none;
+}
+
+div.navigation-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+div.navigation-bar li a:hover:not(.active) {
+    color: coral;
+    text-shadow: -4px -4px black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+.active {
+    background-color: var(--red-mellow);
+}
+/* END - Navigation Bar */
+
+/* Column container */
+.row {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* side bar */
+.side {
+    flex:20%;
+}
+
+/* main column */
+.main {
+    flex:60%;
+    background-color: antiquewhite;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Start - Portrait image*/
+div.profile-pic {
+    margin:5px 5px;
+    background-color:white;
+    box-shadow: 1px 6px 8px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+}
+div.table {
+    padding: 1px;
+}
+/* End - Portrait image */
+
+/* Start - New images Settings */
+.new-image {
+    color:beige;
+    margin-bottom:10px;
+    background-color: #aaa;
+    padding: 20px;
+    box-shadow: 0 10px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    max-height: 40%;
+    background-size: cover;
+    max-width:100%;
+    background-repeat: no-repeat;
+}
+/* End - New Images Setiigns */
+
+/* Background */
+div.new-image.first {
+    background-attachment: fixed;
+    height: 20rem;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230617/pngtree-halloween-wallpapers-and-backgrounds-for-laptop-or-desktop-image_2968567.jpg");
+}
+div.new-image.seccond {
+    background-attachment: fixed;
+    height: 20rem;
+
+    background-image: url("https://cdn.cbeditz.com/cbeditz/preview/halloween-candel-hd-wallpapers-backgrounds-116335125355op8nwx8ul.jpg");
+}
+
+div.new-image.side0 {
+    max-height: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT21HTzHGnW1V0JgVUa6yftDMU8I9AnQzL2p_hsEP6WlgH6gfLiV_SF9iCXjvYP46UDs_g&usqp=CAU");
+}
+div.new-image.side1 {
+    max-height: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdlzITd9ICYQ_TtIXdRl469KxT2gaWHtDQPAPTQs6RiZoVKU_9ooC1XGhDbqAFC_EJf9E&usqp=CAU");
+}
+/* End Background */
+
+/* Start Footer */
+footer {
+    border-top: 5px solid var(--dark-green) ;
+    padding: 5px;
+    background-color: var(--purple-dark);
+}
+footer>h4 {
+    border-bottom: 2px solid gray;
+    max-width: 95%;
+}
+
+
+/* @media (max-width: 700px) {
+    .row, .navbar {
+        
+    }
+} */
+
